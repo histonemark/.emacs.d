@@ -1,0 +1,896 @@
+#+TITLE: Marc Corrales config 
+#+STARTUP: overview
+
+
+* Who am I
+This is my emacs configuration. It is optimized to suit my needs as a Research scholar that does experiments, data analysis and program.
+#+BEGIN_SRC emacs-lisp :tangle yes  
+(setq user-full-name "Marc Corrales"
+      user-mail-address "corralesmarc@gmail.com")
+#+END_SRC
+
+* Fixing Defaults
+** Disable startup screen
+   #+BEGIN_SRC emacs-lisp :tangle yes 
+   (setq inhibit-startup-message t)
+   #+END_SRC
+
+** I know when to execute
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   ;(setq disabled-command-function nil)
+   #+END_SRC
+** Disable menus and scrollbars
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (tool-bar-mode 0)
+   (menu-bar-mode 1)
+   (scroll-bar-mode -1)
+   #+END_SRC
+
+** Disable bell
+   #+BEGIN_SRC emacs-lisp :tangle yes
+     (setq ring-bell-function 'ignore)
+   #+END_SRC
+** Set UTF-8 encoding
+#+BEGIN_SRC emacs-lisp :tangle yes 
+  (setq locale-coding-system 'utf-8)
+  (set-terminal-coding-system 'utf-8)
+  (set-keyboard-coding-system 'utf-8)
+  (set-selection-coding-system 'utf-8)
+  (prefer-coding-system 'utf-8)
+#+END_SRC
+** Change yes/no by y/n
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (defalias 'yes-or-no-p 'y-or-n-p)
+   #+END_SRC
+    
+** Garbage collection
+   From [[http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/][bling]]
+  #+BEGIN_SRC emacs-lisp :tangle yes
+    (defun my-minibuffer-setup-hook ()
+     (setq gc-cons-threshold most-positive-fixnum))
+
+    (defun my-minibuffer-exit-hook ()
+      (setq gc-cons-threshold 800000))
+
+    (add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+    (add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook) 
+  #+END_SRC
+
+** Backup and autosaves
+   Lets avoid poluting every folder
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+   #+END_SRC
+
+   We have more space these days 
+   #+BEGIN_SRC emacs-lisp :tangle yes
+     (run-at-time (* 5 60) nil
+                  (lambda ()
+                    (let ((inhibit-message t))
+                      (recentf-save-list))))     
+     (setq savehist-file "~/.emacs.d/savehist")
+     (savehist-mode 1)
+     (setq history-length t)
+     (setq history-delete-duplicates t)
+     (setq savehist-save-minibuffer-history 1)
+     (setq savehist-additional-variables
+           '(kill-ring
+             search-ring
+             regexp-search-ring))
+     (setq delete-old-versions -1)
+     (setq version-control t)
+     (setq vc-make-backup-files t)
+     (setq auto-save-file-name-transforms
+           '((".*" "~/.emacs.d/auto-save-list/" t)))  
+   #+END_SRC
+** Context sensible text wrapping 
+   Don't wrap lines for coding. Create a hook that enables wrapping, for
+   text-modes like org-mode and markdown-mode.
+
+#+begin_src emacs-lisp :tangle yes
+  (setq-default truncate-lines t)
+
+  (defun my/truncate-lines-hook ()
+    (setq truncate-lines nil))
+
+  (add-hook 'text-mode-hook 'my/truncate-lines-hook)
+#+end_src
+
+** Start emacs server
+   #+BEGIN_SRC emacs-lisp :tangle yes 
+    (server-start)
+   #+END_SRC
+* Aesthetics
+** Theme
+
+    #+BEGIN_SRC emacs-lisp :tangle yes
+    (use-package tango-plus-theme 
+    :ensure t)
+    #+END_SRC 
+** Modeline
+*** Smart modeline
+   #+begin_src emacs-lisp :tangle yes
+     (use-package smart-mode-line
+       :ensure t
+       :init
+       (setq sml/no-confirm-load-theme t)
+       (add-hook 'after-init-hook 'sml/setup)
+       :config 
+       (setq sml/theme 'respectful)
+       (setq sml/name-width 44)
+       (setq sml/shorten-directory t)
+       (setq sml/shorten-modes nil)
+       (setq sml/mode-width 'full)
+       (setq sml/replacer-regexp-list
+             '(("^~/.org/" ":O:")
+               ("^~/\\.emacs\\.d/" ":ED:"))))
+  #+end_src
+
+  
+
+*** Spaceline
+    Pretty modeline from spacemacs 
+    #+BEGIN_SRC emacs-lisp :tangle yes
+      (use-package spaceline
+        :ensure t
+        :config
+        (require 'spaceline-config)
+        (setq spaceline-buffer-encoding-abbrev-p nil)
+        (setq spaceline-line-column-p nil)
+        (setq spaceline-line-p nil)
+        (setq powerline-default-separator (quote arrow))
+        (spaceline-spacemacs-theme))
+    #+END_SRC
+*** Diminish modes
+  Declutter mode madness
+  #+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package diminish
+    :ensure t
+    :init
+    (diminish 'which-key-mode)
+    (diminish 'linum-relative-mode)
+    (diminish 'visual-line-mode)
+    (diminish 'subword-mode)
+    (diminish 'beacon-mode)
+    (diminish 'centered-window-mode)
+    (diminish 'page-break-lines-mode)
+    (diminish 'auto-revert-mode)
+    (diminish 'rainbow-delimiters-mode)
+    (diminish 'rainbow-mode)
+    (diminish 'global-undo-tree-mode))
+  #+END_SRC
+
+*** Cursor position
+    #+BEGIN_SRC emacs-lisp :tangle yes
+     (line-number-mode 1)
+     (column-number-mode 1)
+    #+END_SRC
+
+*** Clock
+**** Time format
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (setq display-time-24hr-format t)
+  (setq display-time-format "%H:%M - %d %B %Y")
+#+END_SRC
+
+**** Enabling the mode
+     This turns on the clock globally.
+     #+BEGIN_SRC emacs-lisp :tangle yes
+     (display-time-mode 1)
+     #+END_SRC
+
+**** Battery indicator
+     Fancy battery to see how much juice we have left.
+     #+BEGIN_SRC emacs-lisp :tangle yes
+       (use-package fancy-battery
+         :ensure t
+         :config
+         (setq fancy-battery-show-percentage t)
+         (setq battery-update-interval 15)
+         (if window-system
+             (fancy-battery-mode)
+           (display-battery-mode)))  
+     #+END_SRC
+
+** Prettyfy symbols
+   #+BEGIN_SRC emacs-lisp :tangle yes
+     (when window-system (global-prettify-symbols-mode t))
+   #+END_SRC
+ 
+** Highligh current line
+   Its so convenient to highlight the line we are currently in.
+  #+BEGIN_SRC emacs-lisp :tangle yes
+  (when window-system (global-hl-line-mode t))
+  #+END_SRC
+** Beacon
+   #+BEGIN_SRC emacs-lisp :tangle yes
+     (use-package beacon
+       :ensure t
+       :config
+       (beacon-mode 1))
+   #+END_SRC
+
+** Volatile-highlights
+   Highlights recently copied/pasted text.
+   #+begin_src emacs-lisp :tangle yes
+     (use-package volatile-highlights
+       :ensure t
+       :diminish volatile-highlights-mode
+       :init
+       (add-hook 'after-init-hook 'volatile-highlights-mode))
+   #+end_src
+** Org Bullets
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (use-package org-bullets
+    :ensure t
+    :config
+      (add-hook 'org-mode-hook (lambda () (org-bullets-mode))))
+   #+END_SRC
+* Secrets
+#+BEGIN_SRC emacs-lisp :tangle yes
+(load-file "~/.emacs.d/secrets.el")
+#+END_SRC
+
+* Projectile
+Projectile is an awesome project manager, mostly because it recognizes directories
+with a =.git= directory as projects and helps you manage them accordingly.
+
+** Enable projectile globally
+This makes sure that everything can be a project.
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package projectile
+    :ensure t
+    :init
+      (projectile-mode 1))
+#+END_SRC
+into y-or-n questions
+#+BEGIN_SRC emacs-lisp :tangle yes
+(defalias 'yes-or-no-p 'y-or-n-p)
+#+END_SRC
+
+* Terminal
+** Load bash and read my path
+
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (defvar my-term-shell "/bin/bash")
+  (defadvice ansi-term (before force-bash)
+  (interactive (list my-term-shell)))
+  (ad-activate 'ansi-term)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp :tangle yes
+(use-package exec-path-from-shell
+  :ensure t
+  :if (memq window-system '(mac ns))
+  :config
+  (exec-path-from-shell-initialize))
+#+END_SRC
+
+** Easy to remember keybinding
+
+#+BEGIN_SRC emacs-lisp :tangle yes
+;(global-set-key (kbd "<m-return>") 'ansi-term)
+#+END_SRC
+
+* Moving and editing
+** Ivy
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package ivy
+    :ensure t)
+#+END_SRC
+** Nicer scrolling 
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (setq scroll-conservatively 10000
+      scroll-preserve-screen-position t)
+   #+END_SRC
+** Swiper to search
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package swiper
+    :ensure t
+    :bind ("C-s" . 'swiper))
+#+END_SRC
+** Ido 
+*** Ido: selection made easy
+    #+BEGIN_SRC emacs-lisp :tangle yes
+      (use-package ido
+        :ensure t
+        :init  (setq ido-enable-flex-matching t
+                     ido-ignore-extensions t
+                     ido-use-virtual-buffers t
+                     ido-everywhere t)
+        :config
+        (ido-mode 1)
+        (ido-everywhere 1)
+        (add-to-list 'completion-ignored-extensions ".pyc"))
+     #+END_SRC
+
+    - Vertical is better
+     #+BEGIN_SRC emacs-lisp :tangle yes
+          (use-package ido-vertical-mode
+            :ensure t
+            :init               
+            (setq ido-vertical-define-keys 'C-n-C-p-up-and-down)
+            :config
+            (ido-vertical-mode 1))
+     #+END_SRC
+
+    - Ido for recent files
+    #+BEGIN_SRC emacs-lisp :tangle yes
+      (use-package recentf
+        :init (setq recentf-max-saved-items 200
+                    recentf-max-menu-items 15)
+        (recentf-mode 1))
+      (defun ido-recentf-open ()
+        "Use `ido-completing-read' to \\[find-file] a recent file"
+        (interactive)
+        (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+            (message "Opening file...")
+          (message "Aborting")))
+      (global-set-key (kbd "C-x f") 'ido-recentf-open)
+    #+END_SRC 
+    
+    - Ido selection by time. From [[https://github.com/howardabrams/dot-files/blob/master/emacs.org][HAbrams]]
+    #+BEGIN_SRC emacs-lisp :tangle yes
+      (defun ido-sort-mtime ()
+        "Reorder the IDO file list from recently modified."
+        (setq ido-temp-list
+              (sort ido-temp-list
+                    (lambda (a b)
+                      (ignore-errors
+                        (time-less-p
+                         (sixth (file-attributes (concat ido-current-directory b)))
+                         (sixth (file-attributes (concat ido-current-directory a))))))))
+        (ido-to-end  ;; move . files to end (again)
+         (delq nil (mapcar
+                    (lambda (x) (and (char-equal (string-to-char x) ?.) x))
+                    ido-temp-list))))
+
+      (add-hook 'ido-make-file-list-hook 'ido-sort-mtime)
+      (add-hook 'ido-make-dir-list-hook 'ido-sort-mtime)
+    #+END_SRC
+    
+*** Smex "ido for M-x"
+    #+BEGIN_SRC emacs-lisp :tangle yes
+      (use-package smex
+        :ensure t
+        :init
+        (smex-initialize)
+        :bind
+        ("M-x" . smex)
+        ("M-X" . smex-major-mode-commands))
+    #+END_SRC
+
+*** Avy
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (use-package avy
+    :ensure t
+    :bind
+      ("M-s" . avy-goto-char))
+   #+END_SRC
+** Expand region
+A pretty simple package, takes your cursor and semantically expands the region, so words, sentences, maybe the contents of some parentheses, it's awesome, try it out.
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package expand-region
+    :ensure t
+    :bind ("C-q" . er/expand-region))
+#+END_SRC
+
+** Popup menu
+
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package ace-popup-menu
+    :ensure t
+    :init
+      (ace-popup-menu-mode 1))
+#+END_SRC
+** Which-key 
+
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package which-key
+    :ensure t
+    :config
+      (which-key-mode))
+#+END_SRC
+** Completion
+   #+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 3)
+  (global-company-mode t))
+#+END_SRC
+
+** Kill ring
+*** Maximum entries on the ring
+ The default is 60, I personally need more sometimes.
+ #+BEGIN_SRC emacs-lisp :tangle yes
+   (setq kill-ring-max 100)
+ #+END_SRC
+*** popup-kill-ring
+ Out of all the packages I tried out, this one, being the simplest, appealed to me most.
+ With a simple M-y you can now browse your kill-ring like browsing autocompletion items.
+ C-n and C-p totally work for this.
+ #+BEGIN_SRC emacs-lisp :tangle yes
+   (use-package popup-kill-ring
+     :ensure t
+     :bind ("M-y" . popup-kill-ring))
+ #+END_SRC
+
+** Edit server
+ #+BEGIN_SRC emacs-lisp :tangle yes
+ (use-package edit-server
+ :ensure t
+ :init (edit-server-start))
+ #+END_SRC
+** Editing with sudo
+Pretty self-explanatory, useful as hell if you use exwm.
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package sudo-edit
+    :ensure t
+    :bind
+      ("s-e" . sudo-edit))
+#+END_SRC
+
+** Undo-tree mode
+ #+BEGIN_SRC emacs-lisp :tangle yes
+ (use-package undo-tree
+  :init (global-undo-tree-mode 1)
+  :ensure t)
+ #+END_SRC 
+** Opening huge files
+#+BEGIN_SRC emacs-lisp :tangle yes
+(use-package vlf
+ :ensure t)
+#+END_SRC
+* Programming
+** Syntax check
+ #+BEGIN_SRC emacs-lisp :tangle yes
+   (use-package flycheck
+     :ensure t
+     :init
+     (global-flycheck-mode t))
+ #+END_SRC
+** Electric pairs
+   #+BEGIN_SRC emacs-lisp :tangle yes
+     (setq electric-pair-pairs '(
+                                (?\{ . ?\})
+                                (?\( . ?\))
+                                (?\[ . ?\])
+                                (?\" . ?\")
+                                ))
+     (electric-pair-mode t)
+   #+END_SRC
+
+** Visual help with paretheses
+  #+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package rainbow-delimiters
+    :ensure t 
+    :init
+    (add-hook 'after-init-hook 'rainbow-delimiters-mode))
+#+END_SRC
+
+#+RESULTS:
+: t
+** Show matching paretheses
+   #+begin_src emacs-lisp :tangle yes
+   (show-paren-mode 1)
+   (setq show-paren-delay 0)
+   (set-face-foreground 'show-paren-match "#86ff0b")
+   (set-face-attribute 'show-paren-match nil :weight 'ultra-bold)
+   #+end_src
+** Show identation guides
+   #+BEGIN_SRC emacs-lisp :tangle yes
+     (use-package highlight-indent-guides
+      :ensure t
+      :init (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+            (setq highlight-indent-guides-method 'character) )
+   #+END_SRC
+
+   #+RESULTS:
+   
+** Linum relative
+   #+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package linum-relative
+    :ensure t
+    :config
+      (setq linum-relative-current-symbol "")
+      (add-hook 'prog-mode-hook 'linum-relative-mode))
+#+END_SRC
+
+** Use spaces not tabs
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (setq-default indent-tabs-mode nil)
+   #+END_SRC
+
+   #+RESULTS:
+
+** Get environment vars
+   #+BEGIN_SRC emacs-lisp :tangle yes
+     (use-package exec-path-from-shell
+       :ensure t
+       :init
+        (when (memq window-system '(mac ns x))
+	  (exec-path-from-shell-initialize)))
+   #+END_SRC
+
+** Git integration
+  It's magit!
+  #+BEGIN_SRC emacs-lisp :tangle yes
+  ;; (use-package magit
+  ;;   :ensure t)
+  #+END_SRC
+
+** Python
+   Elpy takes care of lots of python help
+   #+BEGIN_SRC emacs-lisp :tangle yes
+    (use-package elpy
+     :ensure t
+     :init (elpy-enable)
+           (setq elpy-rpc-backend "jedi")) 
+   #+END_SRC
+
+   Completion with Jedi
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (use-package company-jedi
+      :ensure t
+      :config
+      (add-hook 'python-mode-hook 'jedi:setup))
+  
+  (defun my/python-mode-hook ()
+    (add-to-list 'company-backends 'company-jedi))
+
+  (add-hook 'python-mode-hook 'my/python-mode-hook)
+#+END_SRC
+
+   Get the python path (different at work, home etc) 
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   (setenv "PYTHONPATH" (shell-command-to-string "$SHELL --login -c 'echo -n $PYTHONPATH'"))
+   #+END_SRC
+
+** emacs-lisp :tangle yes
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (add-hook 'emacs-lisp emacs-lisp-mode-hook 'eldoc-mode)
+
+  (use-package slime
+    :ensure t
+    :config
+    (setq inferior-lisp-program "/usr/bin/sbcl")
+    (setq slime-contribs '(slime-fancy)))
+
+  (use-package slime-company
+    :ensure t
+    :init
+    (slime-setup '(slime-fancy slime-company)))
+#+END_SRC
+
+** R
+
+   #+BEGIN_SRC emacs-lisp :tangle yes
+    (use-package ess
+    :ensure t
+    :init (require 'ess-site))
+   #+END_SRC
+
+  #+RESULTS:
+  : t
+
+* Dired
+*** Requiring =dired=
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (require 'dired)
+#+END_SRC
+*** Dired for Mac OSX
+#+BEGIN_SRC emacs-lisp :tangle yes
+  ;; (let ((gls "/usr/local/bin/gls"))
+  ;;  (if (file-exists-p gls)
+  ;;      (setq insert-directory-program gls)))
+#+END_SRC
+*** trash files instead of deleting them
+    #+BEGIN_SRC emacs-lisp :tangle yes
+  (setq delete-by-moving-to-trash t)
+    #+END_SRC
+*** find-dired
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (require 'find-dired)
+  (setq find-ls-option '("-print0 | xargs -0 ls -ld" . "-ld"))
+#+END_SRC
+*** Hide details
+Hide details and only show file and folder names.
+#+begin_src emacs-lisp :tangle yes :tangle no
+  (defun jethro/dired-mode-setup-hook ()
+    "hook for dired-mode"
+    (dired-hide-details-mode 1))
+
+  (add-hook 'dired-mode-hook 'jethro/dired-mode-setup-hook)
+#+end_src
+*** Peep Dired
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package peep-dired
+    :ensure t
+    :bind (:map peep-dired-mode-map
+                ("SPC" . nil)
+                ("<backspace>" . nil))
+    :config
+    (setq peep-dired-cleanup-eagerly t))
+#+END_SRC
+
+#+RESULTS:
+
+*** Sort directories first
+    #+begin_src emacs-lisp :tangle yes
+(setq dired-listing-switches "-aBhl  --group-directories-first")
+    #+end_src
+*** Recursive Copying and Deleting
+    #+begin_src emacs-lisp :tangle yes
+  (setq dired-recursive-copies (quote always))
+  (setq dired-recursive-deletes (quote top))
+    #+end_src
+*** dired-jump from file
+    #+begin_src emacs-lisp :tangle yes
+  (require 'dired-x)
+    #+end_src
+*** allow editing of permissions
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package wdired
+    :config
+    (setq wdired-allow-to-change-permissions t))
+#+END_SRC
+*** dired-narrow
+    #+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package dired-narrow
+    :bind (:map dired-mode-map
+                ("N" . dired-narrow-fuzzy)))
+    #+END_SRC
+*** dired-ranger
+    #+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package dired-ranger
+    :bind (:map dired-mode-map
+                ("C" . dired-ranger-copy)
+                ("P" . dired-ranger-paste)
+                ("M" . dired-ranger-move)))
+    #+END_SRC
+*** dired-subtree
+The dired-subtree package (part of the magnificent dired hacks) allows
+you to expand subdirectories in place, like a tree structure.
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package dired-subtree
+    :ensure t
+    :config
+    (bind-keys :map dired-mode-map
+               ("i" . dired-subtree-insert)
+               (";" . dired-subtree-remove)))
+#+END_SRC
+
+#+RESULTS:
+: t
+
+* Database
+* Org-mode
+** Common settings
+
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package org
+  :ensure org-plus-contrib   
+  :bind
+  (("C-c l" . org-store-link)
+   ("C-c a" . org-agenda)
+   ("C-c b" . org-iswitchb)
+   ("C-c c" . org-capture)) 
+
+  :init
+  (setq org-use-speed-commands t
+        org-ellipsis " "
+        org-src-tab-acts-natively t
+        org-export-with-smart-quotes t
+        org-src-window-setup 'current-window
+        org-return-follows-link t
+        org-hide-emphasis-markers t
+        org-completion-use-ido t
+        org-outline-path-complete-in-steps nil
+        org-src-fontify-natively t   
+        org-confirm-babel-evaluate nil)
+
+
+  (add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode)) 
+  (org-babel-do-load-languages 'org-babel-load-languages
+                               '((shell      . t)
+                                 (emacs-lisp . t)
+                                 (python     . t))))
+#+END_SRC
+
+Org contrib packages
+#+BEGIN_SRC  emacs-lisp :tangle yes
+  (use-package org-drill
+    :ensure org-plus-contrib)
+
+  (use-package org-mime
+    :ensure t)
+#+END_SRC
+
+** Line wrapping in org
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (add-hook 'org-mode-hook
+	    '(lambda ()
+	       (visual-line-mode 1)))
+#+END_SRC
+
+** GTD
+*** Stage 1: Capturing
+    Inboxes:
+    - Mail  Inbox 
+    - Org Inbox
+    - Notebook 
+    
+    Capture templates
+    #+BEGIN_SRC emacs-lisp :tangle yes
+    (setq org-capture-templates
+     `(("i" "Inbox" entry (file "~/.org/gtd/inbox.org")
+         "* REFILE %?")
+       ("c" "Calendar" entry (file  "~/Dropbox/Org/calendars/Gcal_Marc.org")
+	 "* %?\n\n%^T\n\n:PROPERTIES:\n\n:END:\n\n")
+        ;;("p" "paper" entry (file "~/.org/papers/papers.org")
+        ;; "* TODO %(jethro/trim-citation-title \"%:title\")\n%a" :immediate-finish t)
+       ("e" "email" entry (file+headline "~/.org/gtd/projects.org" "Emails")
+         "* TODO Reply: %a " :immediate-finish t)))
+
+     (add-hook 'org-agenda-mode-hook (lambda () (org-gcal-sync) ))
+     (add-hook 'org-capture-after-finalize-hook (lambda () (org-gcal-sync) ))
+    #+END_SRC
+*** Stage 2: Process
+
+   - Standalone task (Work or Personal)
+   - Project (Work or Personal)
+   - Someday/Maybe
+   - Tickler
+   - Errands
+   - Routines
+
+   #+BEGIN_SRC emacs-lisp 
+   (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
+   #+END_SRC 
+
+*** Stage 3: Review
+
+    - Daily
+    - Weekly Review
+*** Stage 4: Do
+** Google calendar
+#+BEGIN_SRC emacs-lisp :tangle yes
+;;  (use-package org-gcal
+;;  :ensure t
+;;  :config
+;;  (setq marc/org-gcal-directory "~/Dropbox/Org/calendars/")
+;;  (defun marc/get-gcal-file-location (loc)
+;;    (concat (file-name-as-directory marc/org-gcal-directory) loc))
+;;  (setq org-gcal-client-id marc/org-gcal-client-id 
+;;        org-gcal-client-secret marc/org-gcal-client-secret
+;;        org-gcal-file-alist 
+;;`(("corralesmarc@gmail.com" . ,(marc/get-gcal-file-location "Gcal_Marc.org"))
+;;("giadacorvino@gmail.com" . ,(marc/get-gcal-file-location "Gcal_Giada.org"));
+;;("guillaume.filion@gmail.com" . ,(marc/get-gcal-file-location "Gcal_GF.org"))
+;;)))
+
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp :tangle yes
+(require 'find-lisp)
+(setq marc/org-agenda-directory "~/Dropbox/Org/calendars")
+(setq org-agenda-files
+      (find-lisp-find-files marc/org-agenda-directory "\.org$"))
+#+END_SRC
+
+#+RESULTS:
+
+
+Check agenda changes
+#+BEGIN_SRC emacs-lisp :tangle yes
+(run-at-time (* 5 60) nil
+             (lambda ()
+               (let ((inhibit-message t))
+                 (org-gcal-fetch))))
+#+END_SRC
+
+* Writing
+** Auto-fill-mode
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (add-hook 'text-mode-hook 'auto-fill-mode)
+  (diminish 'auto-fill-mode)
+#+END_SRC
+** Spellcheck with Flyspell
+    Works with aspell installed in the system
+#+begin_src emacs-lisp :tangle yes
+  (use-package flyspell 
+    :ensure f ;; comes with emacs
+    :diminish flyspell-mode
+    :init
+    (setenv "DICTIONARY" "en_GB"))
+
+  (use-package guess-language
+    :ensure t
+    :defer t
+    :init (add-hook 'text-mode-hook #'guess-language-mode)
+    :config
+    (setq guess-language-langcodes '((en . ("en_GB" "English"))
+                                     (es . ("es_ES" "Español")))
+          guess-language-languages '(en es)
+          guess-language-min-paragraph-length 45)
+    :diminish guess-language-mode)
+
+  (add-to-list 'ispell-skip-region-alist '("^#+BEGIN_SRC" . "^#+END_SRC"))
+#+end_src
+
+* Working with PDFs
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package pdf-tools
+    :mode (("\\.pdf\\'" . pdf-view-mode))
+    :bind
+    (:map pdf-view-mode-map
+          (("h" . pdf-annot-add-highlight-markup-annotation)
+           ("t" . pdf-annot-add-text-annotation)
+           ("D" . pdf-annot-delete)
+           ("C-s" . isearch-forward)))
+    :config
+    ;; More fine-grained resizing (10%)
+    (setq pdf-view-resize-factor 1.1)
+
+    ;; Install pdf tools
+    (pdf-tools-install))
+#+END_SRC
+* Working with images
+
+Emacs Image Manipulation Package
+#+BEGIN_SRC elisp 
+(use-package eimp
+ :ensure t)
+#+END_SRC
+
+#+RESULTS:
+
+The ability to zoom in, etc.
+#+BEGIN_SRC elisp
+(use-package image+
+ :ensure t)
+#+END_SRC
+
+#+RESULTS:
+
+If they are in pdf lets increase the resolution
+#+BEGIN_SRC elisp
+(setq doc-view-resolution 144)
+#+END_SRC 
+
+#+BEGIN_SRC elisp
+(add-hook 'image-mode-hook 'eimp-mode)
+#+END_SRC
+* Lab functions
+Paste the last Dropbox added gel image to the Notebook
+#+BEGIN_SRC elisp
+(defun lab/paste-gel ()
+  "Get latest gel image and add a link."
+  (interactive)
+  (setq geln
+   (car
+    (mapcar #'car
+        (sort (directory-files-and-attributes "~/Dropbox/work/Gels" t)
+              #'(lambda (x y) (not(time-less-p (nth 6 x) (nth 6 y))))))))
+    (insert(format "[[%s][Gel]]" geln)))
+#+END_SRC
+* Templates
+** Org templates "<s"
+   Elisp
+    #+BEGIN_SRC emacs-lisp :tangle yes
+      (add-to-list 'org-structure-template-alist
+                   '("l" "#+BEGIN_SRC emacs-lisp :tangle yes\n?\n#+END_SRC"))
+      (add-to-list 'org-structure-template-alist
+                   '("p" "#+BEGIN_SRC python\n?\n#+END_SRC"))
+      (add-to-list 'org-structure-template-alist
+                   '("r" "#+BEGIN_SRC R\n?\n#+END_SRC"))
+      (add-to-list 'org-structure-template-alist
+                   '("b" "#+BEGIN_SRC bash\n?\n#+END_SRC"))
+   #+END_SRC
+** Yasnippets
+   #+BEGIN_SRC emacs-lisp :tangle yes
+   
+   #+END_SRC
+

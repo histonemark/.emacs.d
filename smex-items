@@ -1,0 +1,70 @@
+
+;; ----- smex-history -----
+(
+ org-gcal-sync
+ query-replace
+ text-scale-increase
+ comment-region
+ fill-paragraph
+ markdown-mode
+ httpd-start
+)
+
+;; ----- smex-data -----
+(
+ (org-babel-tangle . 1)
+ (package-list-packages . 3)
+ (query-replace . 11)
+ (flycheck-mode . 4)
+ (org-mode . 1)
+ (print-buffer . 1)
+ (ispell-buffer . 3)
+ (ispell-change-dictionary . 1)
+ (ispell-word . 1)
+ (org-archive-subtree . 2)
+ (jedi:setup . 2)
+ (comment-region . 9)
+ (slime-compiler-notes-default-action-or-show-details/mouse . 1)
+ (text-scale-increase . 28)
+ (dired . 12)
+ (ansi-term . 4)
+ (jedi:install-server . 3)
+ (epc:pop-to-last-server-process-buffer . 1)
+ (menu-bar-showhide-tool-bar-menu-customize-enable-bottom . 1)
+ (goto-line . 1)
+ (jethro/switch-to-agenda . 1)
+ (org-narrow-to-subtree . 3)
+ (kill-rectangle . 14)
+ (copy-region-as-kill . 1)
+ (yank-rectangle . 17)
+ (server-start . 1)
+ (recover-this-file . 4)
+ (customize . 2)
+ (version . 1)
+ (check-parens . 2)
+ (upcase-word . 2)
+ (text-scale-decrease . 2)
+ (defining-kbd-macro . 3)
+ (upcase-region . 29)
+ (end-kbd-macro . 4)
+ (start-kbd-macro . 1)
+ (call-last-kbd-macro . 28)
+ (company-select-next-if-tooltip-visible-or-complete-selection . 1)
+ (org-table-convert-region . 12)
+ (menu-bar-showhide-tool-bar-menu-customize-enable-right . 3)
+ (menu-bar-mode . 1)
+ (indent-to . 1)
+ (dired-toggle-read-only . 2)
+ (org-gcal-sync . 4)
+ (org-gcal-refresh-token . 1)
+ (magit-log . 1)
+ (text-mode . 1)
+ (html-mode . 1)
+ (run-skewer . 5)
+ (skewer-load-buffer . 2)
+ (httpd-start . 2)
+ (skewer-mode . 1)
+ (skewer-html-eval-tag . 1)
+ (markdown-mode . 1)
+ (fill-paragraph . 1)
+)

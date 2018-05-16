@@ -1,0 +1,269 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/projects/" . "cms-geo/")
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/js/" . "vendor/")
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/2017/12/" . "08/")
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/2017/" . "12/")
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/" . "css/")
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/" . "_includes/")
+ ("/Users/mcorrales/Dropbox/aboutme/" . "_pages/")
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep2/Data/Intensities/" . "BaseCalls/")
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep2/Data/" . "Intensities/")
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep2/" . "Data/")
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep1/Data/Intensities/" . "BaseCalls/")
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep1/Data/" . "Intensities/")
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep1/" . "Data/")
+ ("/home/mcorrales/ant-login/HPIP/iPCR/" . "HPIP_iPCR_rep2/")
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep1/Data/Intensities/" . "BaseCalls/")
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep1/Data/" . "Intensities/")
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep1/" . "Data/")
+ ("/home/mcorrales/ant-login/HPIP/cDNA/" . "HPIP_cDNA_rep1/")
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep2/Data/Intensities/" . "BaseCalls/")
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep2/Data/" . "Intensities/")
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep2/" . "Data/")
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep1/Data/Intensities/" . "BaseCalls/")
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep1/Data/" . "Intensities/")
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep1/" . "Data/")
+ ("/home/mcorrales/ant-login/HPIP/gDNA/" . "HPIP_gDNA_rep2/")
+ ("/home/mcorrales/ant-login/HPIP/libraries/" . "Starcoded_proms/")
+ ("/home/mcorrales/ant-login/HPIP/" . "hpipline/")
+ ("/home/mcorrales/ant-login/" . "HPIP/")
+ ("/home/" . "mcorrales/")
+ ("/home/mcorrales/Dropbox/" . "genomics_scripts/")
+ ("/Users/mcorrales/Dropbox/Org/" . "calendars/")
+ ("/" . "home/")
+ ("/Users/" . "mcorrales/")
+ ("/home/mcorrales/" . "ant-login/")
+ ("/Users/mcorrales/Dropbox/" . "Org/")
+ ("/Users/mcorrales/" . "Dropbox/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/mcorrales/Dropbox/Org/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/_includes/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/publications/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/learning/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/css/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/_site/css/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/papers/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/projects/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/_site/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/posts/"
+ "/Users/mcorrales/Dropbox/histonemark.github.io/_layouts/"
+ "/Users/mcorrales/Dropbox/aboutme/_pages/"
+ "/Users/mcorrales/Dropbox/aboutme/_bibliography/"
+ "/Users/mcorrales/Dropbox/aboutme/_layouts/"
+ "/Users/mcorrales/Dropbox/aboutme/"
+ "/Users/mcorrales/Dropbox/aboutmarc/"
+ "/Users/mcorrales/"
+ "/Users/mcorrales/.emacs.d/"
+ "/home/mcorrales/ant-login/HPIP/hpipline/"
+ "/home/mcorrales/ant-login/HPIP/tripeline/"
+ "/home/mcorrales/ant-login/HPIP/libraries/Starcoded_proms/"
+ "/home/mcorrales/Dropbox/genomics_scripts/"
+ "/home/mcorrales/Starcoded_proms/"
+ "/home/mcorrales/ant-login/HPIP/Doc/"
+ "/home/mcorrales/Dropbox/.emacs.d/"
+ "/home/mcorrales/Dropbox/Org/"
+ "/Users/mcorrales/Desktop/"
+ "/home/mcorrales/Dropbox/The_C_Prog_lang/"
+ "/Users/mcorrales/Dropbox/Org/calendars/"
+ "/ssh:ssh-server.crg.es:"
+ "/ssh:ssh-server.crg.es|mcorrales@"
+ "/Users/mcorrales/Dropbox/.emacs.d/"
+ "/Users/mcorrales/Dropbox/Psad/"
+ "/home/mcorrales/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "3.Personal.org"
+ "nav.html"
+ "index.md"
+ "index.html"
+ "_config.yml"
+ "footer.html"
+ "app.css"
+ "pygments-default.css"
+ "pygments-github.css"
+ "styles.css"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/learning/" (23290 45259 542884 34000) "index.md" ".#index.md" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/Org/" (23288 111 67608 440000) "2.Inbox_phone.org" "1.Inbox.org" "Errands.org" "2.Inbox_phone.org~" "Review.org" "Archives/" "4.Work.txt" "3.Personal.org" "4.Work.tex" "4.Work.pdf" ".DS_Store" "4.Work.org" "Calendars/" "5.Someday.org" "../" "./")
+
+ ("/Users/mcorrales/" (23288 33282 131785 483000) ".viminfo" ".bash_history" "corralesmarc.github.io/" ".gitconfig" ".cache/" "Downloads/" ".Xauthority" ".gem/" ".bash_profile" ".rstudio-desktop/" "Documents/" ".Trash/" ".Rapp.history" "Dropbox/" "Applications/" "Movies/" ".ssh/" "News/" ".dropbox/" "Public/" "emacsd/" ".bash_sessions/" ".cups/" ".android/" ".octave_hist" ".emacs.d/" ".python-environments/" "url/" ".oracle_jre_usage/" ".sonic-pi/" ".lesshst" "Library/" "Desktop/" ".ipython/" ".rnd" ".bundle/" ".keepassx/" "Pictures/" ".subversion/" "bash_profile" ".CFUserTextEncoding" "VirtualBox VMs/" ".htoprc" ".gnupg/" ".DS_Store" ".newsrc" ".newsrc.eld" "Music/" ".config/" ".Rhistory" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/" (23285 43347 30104 240000) "aboutme2/" "histonemark.github.io/" "elfeeddb/" "Marc Corrales BOG (Guillaume Filion).pdf" "modenc_gene_timeseries.csv" "The-ANSI-C-Programming-Language.pdf" "Burocracia/" "plasmidDataBase/" "Timothy Ferriss The 4-Hour Chef The Simple Path to Cooking Like a Pro, Learning Anything, and Living the Good Life.epub" "Math - Unknown - and Easy Math.pdf" "Journal_papers/" "ninestates.png" "Books_non_fiction/" "Chaos-Making-a-New-Science.epub" "emery.04.pdf" "Craig Wright Listening to Music.epub" "Last phD Labmeeting.pdf" ".dropbox.cache/" "Thesis_Defense19012018.pdf" "cala_faro.jpg" "Thesis/" "Psad/" "088278.full.pdf" "Books_SelfHelp/" "Robert M. Sapolsky-Behave_ The Biology of Humans at Our Best and Worst-Penguin Press (2017).azw" "Algorithms-to-Live-By-The-Computer-Science-of-Human-Decisions.epub" "Old-School-Calisthenic-Beginner-Workouts.pdf" "John Maynard Smith-Evolution and the Theory of Games (1982).pdf" "9781408878705_epub.epub" "Work/" "Reference Map of the Salivary Chromosomes of Drosophila melanogaster.jpg" "Obsoleto/" "Oliver Burkeman-The Antidote_ Happiness for People Who Can't Stand Positive Thinking-Faber & Faber (2012).epub" "Unknown - Unknown - No Title(20).pdf" "Molecular Biology of the Cell-Alberts (2014).pdf" ".dropbox" "Public/" "The-C-programming-language.epub" "Martínez, Gould - 1997 - La falsa medida del hombre.pdf" "Courses/" "Tim Ferriss-Tribe of Mentors_ Short Life Advice from the Best in the World-Houghton Mifflin Harcourt (2017).epub" "library.bib" "Thesis Defense_footnotes.pdf" "latexshort.pdf" "Repatterning - Unknown - No Title.pdf" "Biology_of_genomes/" ".emacs.d/" "9780262331302.acsm" "Smith, Morowitz - 2016 - The origin and nature of life on Earth the emergence of the fourth geosphere.pdf" "Covert, Markus Fundamentals of Systems Biology From Synthetic Circuits to Whole-cell Models.pdf" "In-the-Buddhas-Words.pdf" "Unknown - Unknown - No Title(3).pdf" "Sagan - Unknown - No Title.pdf" "Compartidas/" "J.H. Kaas-Evolution of Nervous Systems A Comprehensive Reference. Volumes 1-4-Academic Press (2006).pdf" "Bioinfo_algos/" "(Stadler Genetics Symposia Series) Gary D. Burkholder (auth.), J. Perry Gustafson, R. Appels (eds.)-Chromosome Structure and Function_ Impact of New Concepts-Springer US (1988).pdf" "nrm0101_072a_f2.gif" "Lawreduced, Sense - Unknown - No Title.pdf" "lab/" "Books_fiction/" "Work2.org" "Org Backups/" "General_reference/" "How to Study Mathematics.pdf" "Gordon Marino-Ethics_ The Essential Writings-Modern Library (2010).pdf" "Org/" "In-the-Buddha-s-Words-An-Anthology-of-Discourses-From-the-Pali-Canon.epub" "(Advances in Mutagenesis Research 5) W.-U. Müller, C. Streffer (auth.), Professor Dr. Günter Obe (eds.)-Advances in Mutagenesis Research-Springer-Verlag Berlin Heidelberg (1994).pdf" "genomics_scripts/" "240114.kdb" "Table4defense.png" "Icon
+" "Thesis Defense 10012018.pdf" ".DS_Store" "Oldies/" "Latchman - 2007 - Gene Regulation.pdf" "calibre/" "60-Second-Snapshot-Worksheet.pdf" "The_C_Prog_lang/" "John Yates Culadasa, with J. Graves, M. Immergut The Mind Illuminated  A Complete Meditation Guide Integrating Buddhist Wisdom and Brain Science.epub" "Jonathan Fields-How to Live a Good Life_ Soulful Stories, Surprising Science, and Practical Wisdom-Hay House, Inc. (2016).pdf" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/" (23285 55752 13268 192000) ".git/" "Gemfile.lock" "Gemfile" "_config.yml" "_site/" ".gitignore" "blog/" "_layouts/" "publications/" "learning/" "js/" "_posts/" "css/" ".DS_Store" "index.html" "_includes/" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_includes/" (23287 65439 830716 282000) "nav.html" "header.html" "sidebar.html" "pygments-default.css" "footer.html" "pygments-github.css" ".#app.css" "app.css" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/publications/" (23284 3553 900668 875000) "index.md" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/.emacs.d/" (23285 28015 201692 299000) "backups/" "config.org~" "secrets.el" "elpa/" "recentf" "request/" "history" ".org-id-locations" "bookmarks" "init.el" ".python-environments/" "url/" "auto-save-list/" "config.el" "inbox.org" "tickler.org" "someday.org" "tramp" "projectile-bookmarks.eld" "config.org" "org-gcal/" "abbrev_defs" "eshell/" "smex-items" ".DS_Store" "ido.last" "savehist" "recentf (mcorrales’s MacBook Pro's conflicted copy 2018-04-19)" "snippets/" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/Org/calendars/" (23284 573 947683 522000) "Gcal_GF.org" ".#Gcal_Marc.org_archive" "Gcal_Giada.org" "Gcal_GF.org_archive" ".#Gcal_GF.org_archive" "Gcal_Marc.org" "Gcal_Marc.org_archive" "Gcal_Giada.org_archive" "../" "./")
+
+ ("/Users/mcorrales/Desktop/" (23284 21636 19044 675000) "[Untitled].pdf" "Ptashne, Gann - 2002 - Genes and Signal.pdf" "prof_pic.jpg" "self_math.org" "emacs_config_jethro.txt" "fa-brands-400.ttf" "untitled.pdf" "Unknown - Unknown - No Title(6).pdf" "science.bib" ".#self_math.org" ".Rapp.history" "semantic_reading.jpg" "GTD.org" "509.pdf" "Getting-Things-Done-The-Art-of-Stress-Free-Productivity.epub" "academicons-1.8.6/" "Pete Graham Online CV.pdf" "[Wiley Clinical Psychology Handbooks] Stephen V. Shepherd - The Wiley Handbook of Evolutionary Neuroscience (2017, Wiley-Blackwell).epub" "fontawesome-free-5.0.12/" "Factor_Stimulating_Transcription_by_RNA_Polymerase.pdf" "DCIM/" "Peters - Unknown - No Title.pdf" "WhatsApp Images/" "prof_pic copy.jpg" "10.1371%2Fjournal.pone.0143166.bib" "10.1.1.902.3033.pdf" "academicons-1.8.6.zip" "LabNotebook.org" "Algorithms and Data Structures - Niklaus Wirth.pdf" "Screenshot-2018-5-9 Directory structure.png" "jacob1961.pdf" "Kimura - 1983 - The Neutral Theory of Molecular Evolution.pdf" "288d82b9307865e1e25b4b72a388b46d.log" "Camera/" "HyperSwitch.dmg" "b3e1d0765ad61d82c6ff8d65922a8922.log" ".localized" "thesis comittee 180917.pdf" "cv-master-1/" "Chromatin conformation and HIV.pdf" "baker1968.pdf" ".DS_Store" "#emacs_config_jethro.txt#" "Developer Free Website Template - Free-CSS.com.zip" "academicons-1.8-1.6/" "FortiClient_5.6.1.723_macosx.dmg" "Moderncv Classic/" "Screen Shot 2018-05-08 at 11.21.43.png" "../" "./")
+
+ ("/Users/mcorrales/.emacs.d/" (23285 28015 201692 299000) "backups/" "config.org~" "secrets.el" "elpa/" "recentf" "request/" "history" ".org-id-locations" "bookmarks" "init.el" ".python-environments/" "url/" "auto-save-list/" "config.el" "inbox.org" "tickler.org" "someday.org" "tramp" "projectile-bookmarks.eld" "config.org" "org-gcal/" "abbrev_defs" "eshell/" "smex-items" ".DS_Store" "ido.last" "savehist" "recentf (mcorrales’s MacBook Pro's conflicted copy 2018-04-19)" "snippets/" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/" (23284 19116 680587 966000) "assets/" "robots.txt" "sitemap.xml" "blog/" "publications/" "js/" "css/" "index.html" "feed.xml" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/css/" (23284 18789 345558 418000) "styles.css" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/css/" (23284 5255 183109 199000) "styles.css" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/projects/cms-geo/" (23283 62930 709487 897000) ".htaccess" "data/" "drugs.html" "drugs2.html" "obesity.html" "diabetes.html" "js/" "css/" "diabetes-medicare.html" "index.html" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/projects/img/" (23283 62930 714356 357000) "cms-geovar.png" "nv.png" "tnv.png" "cinevis.png" "cms-health-indicators.png" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/projects/" (23284 1627 132058 139000) "index.md" "img/" "cms-geo/" "../" "./")
+
+ ("/Users/mcorrales/Downloads/" (23284 295 827580 286000) "Behera et al. - 2018 - Exploiting genetic variation to uncover rules of transcription factor binding and chromatin accessibility.pdf" "Genome Res.-2017-Corrales-Berjano-gr.211433.116.pdf" "Manual-nuevo-mando-a-distancia-movistar-plus.pdf" "thesis_committee_2.key" "Genome Res.-2017-Corrales-Berjano-gr.211433.116 (1).pdf" ".localized" "takeout-20180328T075744Z-002.zip" ".DS_Store" ".com.google.Chrome.ZyqMGZ" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/assets/" (23283 64106 212219 720000) "css/" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/papers/" (23283 62930 678992 727000) "index.md" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/js/vendor/" (23283 62930 677717 787000) "jquery-1.8.2.min.js" "modernizr-2.6.2.min.js" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/js/" (23283 62930 676562 485000) "vendor/" "twitter.js" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/posts/" (23283 62930 680210 920000) "index.html" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/2017/12/08/" (23283 64106 296177 817000) "golang-packages.html" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/2017/12/" (23283 64106 296034 243000) "08/" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_site/2017/" (23283 64106 295931 824000) "12/" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/histonemark.github.io/_layouts/" (23283 62930 669768 691000) "default.html" "post.html" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/aboutme/_pages/" (23283 61645 563034 72000) "about.md" "teaching.md" "publications.md" "projects.md" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/aboutme/_bibliography/" (23282 48138 77257 192000) "papers.bib" "Thesis_Marc_Corrales copy.pdf" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/aboutme/_layouts/" (23280 29407 372093 450000) "none.html" "about.html" "default.html" "bib.html" "page.html" "post.html" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/aboutme/" (23281 55971 502271 609000) "assets/" ".git/" "_sass/" "_data/" "Gemfile.lock" "Gemfile" "_config.yml" "_site/" ".gitignore" "_news/" "_pages/" "README.md" "blog/" "_layouts/" "_bibliography/" "_posts/" "_projects/" "bin/" "LICENSE" ".DS_Store" "_includes/" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/aboutme/styles/" (23280 28477 963921 865000) "jquery.js" "jQuery.headroom.js" "fonts/" "fa/" "github-markdown.css" "mlz/" "main.css" "index.js" "headroom.js" "syntax.css" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/aboutmarc/" (23280 24737 325348 741000) ".htaccess" "assets/" ".#index.html" "ReadMe.txt" ".codekit-cache/" ".DS_Store" "index.html" "favicon.ico" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/hpipline/" (23263 5914 0 0) "hpipline.py" ".git/" "merge_miseq_lanes.py" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/links/" (23263 14449 0 0) "HPIP_iPCR_rep1_fwd.fastq" "HPIP_iPCR_rep2_Rev.fastq" "HPIP_cDNA_rep1.fastq" "HPIP_iPCR_rep1_Rev.fastq" "HPIP_iPCR_rep2_fwd.fastq" "HPIP_cDNA_rep2.fastq" "HPIP_gDNA_rep1.fastq" "prom_bcd.d" "HPIP_gDNA_rep2.fastq" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/libraries/" (23261 59618 0 0) "HPIP_bcds_A1toA12/" "index_count.txt" "HPIP_bcds_G1toG12/" "HPIP_bcds_B1toB12/" "HPIP_bcds_E1toE12/" "HPIP_bcds_D1toD12/" "prom_bcd.p" "Starcoded_proms/" "HPIP_bcds_H1-H12/" "HPIP_bcds_C1toC12/" "generate_promoter_barcode_association.py" "HPIP_bcds_F1-F12/" "process_library_seq.py" "Processing_stats.log" "count_indexes.py" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep2/Data/Intensities/BaseCalls/" (23263 12388 0 0) "HPIP_iPCR_rep2_Rev.fastq" "L004/" "merge.sh" "HPIP_iPCR_rep2_fwd.fastq" "L003/" "L001/" "L002/" "Reports/" "Stats/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep2/Data/Intensities/" (23245 56803 0 0) "L004/" "L003/" "L001/" "L002/" "DebugImages/" "BaseCalls/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep2/Data/" (23245 56590 0 0) "Intensities/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep2/" (23258 661 0 0) "Images/" "RTARead3Complete.txt" "RTARead1Complete.txt" "RunCompletionStatus.xml" "Data/" "Config/" "RunParameters.xml" "RTAComplete.txt" "Logs/" "RTAConfiguration.xml" "InterOp/" "Queued/" "RTALogs/" "RunInfo.xml" "RTARead2Complete.txt" "Recipe/" "../" "./")
+
+ ("/home/mcorrales/.emacs.d/" (23263 14206 228393 80000) "backups/" "recentf (mcorrales’s MacBook Pro's conflicted copy 2018-04-19)" ".org-id-locations" "savehist" "secrets.el" "ido.last" ".python-environments/" "auto-save-list/" "inbox.org" "bookmarks" "./" "history" "someday.org" "init.el" "org-gcal/" "request/" "abbrev_defs" "url/" "elpa/" "tickler.org" "config.el" "snippets/" "tramp" "recentf" "config.org~" "eshell/" "config.org" "projectile-bookmarks.eld" "../" "smex-items")
+
+ ("/home/mcorrales/Dropbox/.emacs.d/" (23263 14206 228393 80000) "backups/" "recentf (mcorrales’s MacBook Pro's conflicted copy 2018-04-19)" ".org-id-locations" "savehist" "secrets.el" "ido.last" ".python-environments/" "auto-save-list/" "inbox.org" "bookmarks" "./" "history" "someday.org" "init.el" "org-gcal/" "request/" "abbrev_defs" "url/" "elpa/" "tickler.org" "config.el" "snippets/" "tramp" "recentf" "config.org~" "eshell/" "config.org" "projectile-bookmarks.eld" "../" "smex-items")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep1/Data/Intensities/BaseCalls/" (23263 11867 0 0) "HPIP_iPCR_rep1_fwd.fastq" "L004/" "merge.sh" "HPIP_iPCR_rep1_Rev.fastq" "L003/" "merge.sh~" "L001/" "L002/" "Reports/" "Stats/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep1/Data/Intensities/" (23211 36358 0 0) "L004/" "L003/" "L001/" "L002/" "DebugImages/" "BaseCalls/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep1/Data/" (23211 36171 0 0) "Intensities/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/HPIP_iPCR_rep1/" (23263 5120 0 0) "Images/" "RTARead3Complete.txt" "RTARead1Complete.txt" "RunCompletionStatus.xml" "Data/" "Config/" "RunParameters.xml" "RTAComplete.txt" "Logs/" "RTAConfiguration.xml" "InterOp/" "Queued/" "RTALogs/" "RunInfo.xml" "RTARead2Complete.txt" "Recipe/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/iPCR/" (23256 37466 0 0) "HPIP_iPCR_rep2/" "HPIP_iPCR_rep1/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep2/" (23261 64352 0 0) "Images/" "RTARead1Complete.txt" "RunCompletionStatus.xml" "Data/" "Config/" "RunParameters.xml" "RTAComplete.txt" "Logs/" "RTAConfiguration.xml" "InterOp/" "Queued/" "RTALogs/" "RunInfo.xml" "RTARead2Complete.txt" "Recipe/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep2/Data/" (23218 7371 0 0) "Intensities/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep2/Data/Intensities/" (23218 7776 0 0) "L004/" "L003/" "L001/" "L002/" "DebugImages/" "BaseCalls/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep2/Data/Intensities/BaseCalls/" (23263 10335 0 0) "L004/" "merge.sh" "HPIP_cDNA_rep2.fastq" "L003/" "L001/" "L002/" "Reports/" "Stats/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep1/Data/Intensities/BaseCalls/" (23263 10421 0 0) "HPIP_cDNA_rep1.fastq" "L004/" "merge.sh" "Undetermined_S0_L001_R1_001.fastq.gz" "Undetermined_S0_L002_R1_001.fastq.gz" "L003/" "L001/" "L002/" "Reports/" "Stats/" "Undetermined_S0_L004_R1_001.fastq.gz" "Undetermined_S0_L003_R1_001.fastq.gz" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep1/Data/Intensities/" (23256 23757 0 0) "L004/" "L003/" "L001/" "L002/" "DebugImages/" "BaseCalls/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep1/Data/" (23256 23370 0 0) "Intensities/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/HPIP_cDNA_rep1/" (23261 52768 0 0) "Images/" "RTARead1Complete.txt" "RunCompletionStatus.xml" "Data/" "Config/" "RunParameters.xml" "RTAComplete.txt" "Logs/" "RTAConfiguration.xml" "InterOp/" "Queued/" "RTALogs/" "RunInfo.xml" "RTARead2Complete.txt" "Recipe/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/cDNA/" (23256 43850 0 0) "HPIP_cDNA_rep1/" "HPIP_cDNA_rep2/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep2/Data/Intensities/BaseCalls/" (23263 10180 0 0) "L004/" "L003/" "L001/" "L002/" "Reports/" "Stats/" "HPIP_gDNA_rep2.fastq" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep2/Data/Intensities/" (23199 43839 0 0) "L004/" "L003/" "L001/" "L002/" "DebugImages/" "BaseCalls/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep2/Data/" (23199 43421 0 0) "Intensities/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep2/" (23261 51848 0 0) "Images/" "RTARead1Complete.txt" "RunCompletionStatus.xml" "Data/" "Config/" "RunParameters.xml" "RTAComplete.txt" "Logs/" "RTAConfiguration.xml" "InterOp/" "Queued/" "RTALogs/" "RunInfo.xml" "RTARead2Complete.txt" "Recipe/" "../" "./")
+
+ ("/home/mcorrales/Starcoded_proms/" (23263 1699 592611 146000) "PromoterH3_starcoded.txt" "PromoterC8_starcoded.txt" "PromoterD10_starcoded.txt" "PromoterB6_starcoded.txt" "PromoterF7_starcoded.txt" "PromoterF4_starcoded.txt" "PromoterE7_starcoded.txt" "PromoterB12_starcoded.txt" "PromoterD3_starcoded.txt" "PromoterE9_starcoded.txt" "check_overlap.R" "PromoterA9_starcoded.txt" "PromoterA12_starcoded.txt" "PromoterF6_starcoded.txt" ".Rhistory" "PromoterB3_starcoded.txt" "PromoterH6_starcoded.txt" "PromoterF11_starcoded.txt" "PromoterA5_starcoded.txt" "PromoterE6_starcoded.txt" "PromoterA4_starcoded.txt" "PromoterA1_starcoded.txt" "PromoterE11_starcoded.txt" ".#check_overlap.R" "PromoterA7_starcoded.txt" "PromoterF3_starcoded.txt" "PromoterD5_starcoded.txt" "PromoterB7_starcoded.txt" "PromoterC9_starcoded.txt" "PromoterB9_starcoded.txt" "PromoterC5_starcoded.txt" ".#generate_bcd_hist.R" "PromoterB8_starcoded.txt" "PromoterE10_starcoded.txt" "PromoterC7_starcoded.txt" "PromoterG8_starcoded.txt" "PromoterH1_starcoded.txt" "PromoterG12_starcoded.txt" "PromoterH5_starcoded.txt" "PromoterA8_starcoded.txt" "PromoterD12_starcoded.txt" "PromoterG7_starcoded.txt" "PromoterG4_starcoded.txt" "PromoterB11_starcoded.txt" "./" "PromoterF5_starcoded.txt" "PromoterC2_starcoded.txt" "PromoterB10_starcoded.txt" "PromoterB1_starcoded.txt" "PromoterE2_starcoded.txt" "PromoterE5_starcoded.txt" "PromoterG11_starcoded.txt" "PromoterH11_starcoded.txt" "PromoterG6_starcoded.txt" "PromoterG9_starcoded.txt" "PromoterC1_starcoded.txt" "PromoterD7_starcoded.txt" "PromoterH4_starcoded.txt" "PromoterF12_starcoded.txt" "PromoterC12_starcoded.txt" "PromoterC10_starcoded.txt" "PromoterD6_starcoded.txt" "PromoterD1_starcoded.txt" "PromoterD9_starcoded.txt" "PromoterC3_starcoded.txt" "PromoterF9_starcoded.txt" "PromoterD4_starcoded.txt" "PromoterH9_starcoded.txt" "PromoterE1_starcoded.txt" "PromoterD2_starcoded.txt" "PromoterA10_starcoded.txt" "PromoterC11_starcoded.txt" "PromoterG1_starcoded.txt" "PromoterG3_starcoded.txt" "PromoterA11_starcoded.txt" "PromoterE12_starcoded.txt" "PromoterH8_starcoded.txt" "PromoterH7_starcoded.txt" "PromoterB2_starcoded.txt" "HPIP_libs_overlaps.pdf" "PromoterH10_starcoded.txt" "PromoterF2_starcoded.txt" "PromoterF8_starcoded.txt" "PromoterF10_starcoded.txt" "PromoterE4_starcoded.txt" "PromoterA6_starcoded.txt" "PromoterC4_starcoded.txt" "PromoterB5_starcoded.txt" "PromoterC6_starcoded.txt" "PromoterD11_starcoded.txt" "PromoterG5_starcoded.txt" "PromoterA2_starcoded.txt" "PromoterF1_starcoded.txt" "PromoterG10_starcoded.txt" "PromoterH12_starcoded.txt" "../" "PromoterA3_starcoded.txt" "PromoterG2_starcoded.txt" "PromoterE3_starcoded.txt")
+
+ ("/home/mcorrales/Dropbox/genomics_scripts/" (23261 62179 645841 989000) "make_hicup_SNPlist.py" "extract_proms_bcds.py" "remove_header.py" "extract_chr.py" "To_genomebrows.py" "extract_haplos_from_paired.py" "permutgood.py" "tripeline.py" "extract_promoter_500_100_color.py" "make_canonicals.py" "hicline.py" "dict_integrations.py" "giff_2_bed.py" "sigma_oligo_batch.py" "extract_enhancers_DRE.py" "fourcline.py" "extract_enhancers_M16.py" "extract_96_fwds.py" "clean_hetero.py" "GATC_Primer_Seeker.py" "__init__.py" "gzopen.pyc" "promoters_from_tss.py" "make_dict_gf.py" "oneliner.py" "chromosome_name.py" "get_black_regions.py" "clean_reads.py" "Calculate_promoter_coordinate.py" "extract_repeats.py" "make_dict_bcd.py" "cleaning.py" "generate_promoter_barcode_association.py" "oligos2benchling.py" "merger.py" "extract_utr.py" "GATC2dict.py" "genes_expreseion_clean.py" "extract_reads.py" "vtrack.py" "get_five_prime_UTR.py" "to_bed.py" "extract_promoters.py" "parsegem.py" "culture_simulation.py" "promoter_extractor.py" "extract_matrix.py" "parse.py" "translate.py" "callStarcode.py" "to_bedgrapgh.py" "prep_mapall.py" "bitacora.py" "find_RE.py" "gzopen.py" "keepThem.py" "miniparser.py" "get_stuff_like_Marc.py" "preprocess.py" "trip_parser.py" "merge_samples.py" "./" "README.md" "smallindex.py" "chrom_biner.py" "parse_ohler_mails.py" "parse_pdb.py" "automata.py" "parse_lorena.py" "test.py" "gengene_per_TSS2gbrowser.py" "extract_promoter_color.py" "python_node.py" "process_library_seq.py" "process_data.py" "cut_and_fasta.py" "trip_pipeline.py" "take28.py" "2_GB.py" "ekmers.py" "get_stuff_like_Marc_modif.py" "extract_exons.py" "barcodes.py" "parse_to_map.py" "oligoz.py" "ipy_user_conf.py" "keep_alelic_contacts.py" "stats.py" "transform2bed.py" "extract_genes_from_bed.py" ".git/" "extract_barcodes.py" "ten_from_randomlist.py" "make_diploid_SNP.py" "replace_canonicals.py" "extract_100_promoter_color.py" "extract_bun_reads.py" "make_haploids.py" "fix_spike_lines.py" "extract_pairs.py" "read_selected_reads.py" "fourc_exp_line.py" "filter_mapped.py" "RACE_consistent.py" "makeBedgraph.py" "make_coords2mask.py" "../" "diag.py" "hpipline.py" "clean_arantxa.py" "find_duplicate_identifiers.py" "extract_gene.py")
+
+ ("/home/mcorrales/ant-login/HPIP/libraries/Starcoded_proms/" (23261 64504 0 0) "PromoterB9_starcoded.txt" "PromoterH11_starcoded.txt" "PromoterF11_starcoded.txt" "PromoterA4_starcoded.txt" "PromoterE9_starcoded.txt" "PromoterH5_starcoded.txt" "PromoterF10_starcoded.txt" "PromoterA5_starcoded.txt" "PromoterD2_starcoded.txt" ".Rhistory" "PromoterA6_starcoded.txt" "PromoterB10_starcoded.txt" "PromoterA2_starcoded.txt" "PromoterH8_starcoded.txt" "PromoterD4_starcoded.txt" "PromoterC1_starcoded.txt" "PromoterC2_starcoded.txt" "PromoterH1_starcoded.txt" "PromoterF3_starcoded.txt" "PromoterD6_starcoded.txt" "PromoterC4_starcoded.txt" "PromoterF2_starcoded.txt" "PromoterC6_starcoded.txt" "PromoterG3_starcoded.txt" "PromoterA9_starcoded.txt" "PromoterD11_starcoded.txt" "PromoterC10_starcoded.txt" "PromoterH4_starcoded.txt" "PromoterG4_starcoded.txt" "PromoterG12_starcoded.txt" "PromoterF9_starcoded.txt" "PromoterG7_starcoded.txt" "PromoterB11_starcoded.txt" "PromoterH3_starcoded.txt" "PromoterF5_starcoded.txt" "PromoterG8_starcoded.txt" "PromoterH10_starcoded.txt" "PromoterE12_starcoded.txt" "PromoterE5_starcoded.txt" "PromoterE7_starcoded.txt" "PromoterH12_starcoded.txt" "PromoterD1_starcoded.txt" "PromoterC11_starcoded.txt" "check_overlap.R" "HPIP_libs_overlaps.pdf" "PromoterB3_starcoded.txt" "PromoterF7_starcoded.txt" "PromoterG5_starcoded.txt" "PromoterE2_starcoded.txt" "PromoterB7_starcoded.txt" "PromoterB8_starcoded.txt" "PromoterE3_starcoded.txt" "PromoterD7_starcoded.txt" ".#generate_bcd_hist.R" "PromoterG10_starcoded.txt" "PromoterF8_starcoded.txt" "PromoterE11_starcoded.txt" "PromoterF6_starcoded.txt" "PromoterA10_starcoded.txt" "PromoterC5_starcoded.txt" "PromoterD10_starcoded.txt" "PromoterA3_starcoded.txt" "PromoterE10_starcoded.txt" "PromoterA7_starcoded.txt" "PromoterC7_starcoded.txt" "PromoterD9_starcoded.txt" "PromoterF12_starcoded.txt" "PromoterG9_starcoded.txt" "PromoterH7_starcoded.txt" "PromoterE1_starcoded.txt" "PromoterG11_starcoded.txt" "PromoterA8_starcoded.txt" "PromoterE4_starcoded.txt" "PromoterD3_starcoded.txt" "PromoterG1_starcoded.txt" "PromoterH9_starcoded.txt" "PromoterD5_starcoded.txt" "PromoterE6_starcoded.txt" "PromoterH6_starcoded.txt" "PromoterA12_starcoded.txt" "PromoterF4_starcoded.txt" "PromoterG6_starcoded.txt" "PromoterC3_starcoded.txt" "PromoterC9_starcoded.txt" "PromoterB12_starcoded.txt" "PromoterG2_starcoded.txt" "PromoterF1_starcoded.txt" "PromoterC8_starcoded.txt" "PromoterB5_starcoded.txt" "PromoterA11_starcoded.txt" "PromoterB6_starcoded.txt" "PromoterB2_starcoded.txt" "PromoterC12_starcoded.txt" "PromoterD12_starcoded.txt" "PromoterA1_starcoded.txt" "PromoterB1_starcoded.txt" "../" "./")
+
+ ("/home/mcorrales/" (23263 5191 872550 255000) "bedtools2/" ".emacs.d/" "bcl2fastq/" ".pki/" "Descargas/" ".compiz/" ".QtWebEngineProcess/" ".gnupg/" ".dropbox-dist/" "Music/" "Videos/" "Documents/" ".gnome2/" ".Rhistory" ".rstudio-desktop/" ".fltk/" ".mu/" ".FBReader/" "all_login/" ".xsession-errors.old" ".lesshst" "logs/" ".gksu.lock" ".TelegramDesktop/" ".ssh/" "emacs-src/" "trash/" "Pictures/" "hpip.org" ".thunderbird/" ".wine/" ".cache/" ".snapgene-viewer/" "hicfordefense.pdf" ".octave_hist" "tmp.txt" ".w3m/" "SpiderOak Hive/" "tmp/" ".cpan/" ".dbus/" "bowtie2/" ".gphoto/" "hicup_v0.5.8/" "Templates/" ".thumbnails/" "py_scripts_list.txt~" ".Xauthority" ".gstreamer-0.10/" ".bash_logout" ".xsession-errors" ".gvfs/" ".bash_history" ".cups/" ".ido.last" ".AnnotationHub/" "sratoolkit.2.5.4-1-ubuntu64/" ".fonts/" "CTCF.pdf" "Desktop/" ".putty/" "emacs.d20180325/" ".adobe/" ".mozilla/" ".viminfo" "Escritorio/" ".dropbox/" "tempo/" "bcl2fastq2-v2.19.0.tar.gz" ".profile" "Rplot.pdf" "bin/" ".bashrc" "blackTF/" "Dockerdata_hpip/" "Public/" "rscripts/" ".elfeed/" ".gconf/" ".kde/" "mntshared/" "dockerbuild/" "homer/" "temp/" "Telegram/" ".RDataTmp" ".python-eggs/" ".nv/" ".filezilla/" "H3K36me3.pdf" "ant-login/" "fontconfig/" ".hplip/" "HMMt/" ".pip/" "Dropbox/" ".macromedia/" ".gitconfig" "temp.txt" "meme/" ".docker/" ".gnome/" "samtools/" "cufflinks-2.2.1.Linux_x86_64/" ".ICEauthority" "Starcoded_proms/" ".texmf-var/" ".recentf" "Downloads/" "R/" ".mbsyncrc" "py_scripts_list.sh" ".PlayOnLinux/" "meme_4.11.2/" "weblogo/" "SNPsplit_v0.2.0/" ".gimp-2.8/" ".config/" ".python_history" ".spotifywebplayer/" "FileZilla_3.25.0_x86_64-linux-gnu.tar" "hicline/" "inseq.fasta" "deme/" "igv/" ".gs/" ".ncftp/" "juicebox/" ".local/" ".java/" "../" "./")
+
+ ("/home/mcorrales/ant-login/" (23263 13883 0 0) "merge.sh.e23000012" "tripc_p8.RData" "merge.sh.o23000013" "170313_NS500645_0092_AHKF23AFXX_RUN87_GF28/" ".ido.last" ".dropbox/" "p5pool/" "Corces_HiC/" ".nfs000000001778db7000000226" ".gnome2_private/" "HPIP_iPCR_rep1_fwd.fastq" ".lesshst" ".ccache/" "merge.sh.e23002425" "vika/" ".macromedia/" ".gnote/" ".kde/" "HPIP_cDNA_rep1.fastq" ".gnupg/" ".Rhistory" "fourc_p8/" "trip_droso/" ".fontconfig/" ".recentf" ".gvfs/" "p9_clones_iPCR/" "Dropbox/" "merge.sh.o23002453" ".local/" "merge.sh.o23002426" ".cache/" "HC_RNA-seq/" "HPIP_iPCR_rep1_Rev.fastq" ".zshrc" "Videos/" ".nautilus/" ".xsession-errors" ".mozilla/" "HPIP/" ".wine/" ".appdata/" "merge.sh.o23000012" ".esd_auth" ".gtk-bookmarks" "HPIP_49to60/" "python_scripts.txt~" "R/" ".bashrc" "Documents/" "SampleSheet.csv" "bin/" ".ssh/" ".java/" ".pulse/" ".ipython/" "161125_NS500645_0077_AHTJMMBGXY_RUN72_GF21/" ".dropbox-dist-old-rS_bfW/" ".gconfd/" "merge.sh.e23002453" ".ICEauthority" ".gstreamer-0.10/" "fourc_p5/" "logchat" ".dropbox-dist/" "seq_data/" "Public/" ".pulse-cookie" "bwa/" "merge.sh.e23002426" "170206_NS500645_0084_AHWVKMBGXY_RUN78_GF23_2/" "Capsaspora/" ".pki/" "shared/" "mirko/" "SDK_JsGlobal.Data" ".swp" ".lyx/" ".nv/" "allprom.txt" "Arantxa_HiC/" "Enhancers/" "Mus_hybrid/" "Rep1.2/" "562ctcf.bed" "python_scripts.sh" ".virtualenvs/" ".evolution/" ".dbus/" "merge.sh.o23002333" "Kc167_RNASeq_R/" ".adobe/" "merge.sh.e23000013" ".texlive2007/" "clustJob.sh~" "Templates/" ".imsettings.log" "dm_feat/" "merge.sh.o23002425" "merge.sh.o23002366" ".DS_Store" ".gnome2/" "Desktop/" "igv/" "Music/" "TRiP_Data/" ".gconf/" ".config/" "Holidays_Mallorca_2014/" ".bash_history" ".Xauthority" ".gimp-2.6/" "merge.sh.e23002333" ".bash_logout" ".bash_profile" ".kshrc" ".icons/" "p9delta/" ".emacs.d/" ".xsession-errors.old" "Trip_non_integrated/" ".qt/" "._.DS_Store" "Rep1.3/" ".themes/" "allprom_nochromP.txt" ".icedteaplugin/" ".viminfo" ".erc/" "HPIP_Promtable/" "merge.sh.e23002366" ".thumbnails/" "Pictures/" ".python-eggs/" "Downloads/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep1/Data/Intensities/BaseCalls/" (23263 10034 0 0) "L004/" "HPIP_gDNA_rep1.fastq" "L003/" "L001/" "L002/" "Reports/" "Stats/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep1/Data/Intensities/" (23173 19499 0 0) "L004/" "L003/" "L001/" "L002/" "DebugImages/" "BaseCalls/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep1/Data/" (23173 19072 0 0) "Intensities/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/HPIP_gDNA_rep1/" (23262 63067 0 0) "Images/" "RTARead1Complete.txt" "RunCompletionStatus.xml" "Data/" "Config/" "RunParameters.xml" "RTAComplete.txt" "Logs/" "HPIP_gDNA_rep1.fastq" "RTAConfiguration.xml" "InterOp/" "Queued/" "RTALogs/" "RunInfo.xml" "RTARead2Complete.txt" "Recipe/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/gDNA/" (23217 2297 0 0) "HPIP_gDNA_rep1/" "HPIP_gDNA_rep2/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/" (23263 10006 0 0) "tripeline/" "Doc/" "hpipline/" "links/" "cDNA/" "libraries/" "gDNA/" "iPCR/" "../" "./")
+
+ ("/home/mcorrales/ant-login/HPIP/tripeline/" (23255 21529 0 0) "testcase_gDNA_spikes_starcode.txt" "vtrack.pyc" "vtrack.py" "gzopen.py" "testcase_expected.txt" "testcase_gDNA_wformat_starcode.txt" "test.py" ".git/" ".gitignore" "testcase_cDNA_spikes_starcode.txt" "testcase.map" "read2.fastq.gz" "gzopen.pyc" "testcase_cDNA_starcode.txt" "tripeline.py" "read1.fastq.gz" "testcase_gDNA_starcode.txt" "testcase_starcode.txt" "Readme.md" "testcase_gDNA_wformat2_starcode.txt" "../" "./")
+
+ ("/home/mcorrales/Dropbox/" (23260 54341 167121 349000) "Thesis_Defense19012018.pdf" "Courses/" "Psad/" "calibre/" "General_reference/" ".emacs.d/" "Math - Unknown - and Easy Math.pdf" "9780262331302.acsm" "Robert M. Sapolsky-Behave_ The Biology of Humans at Our Best and Worst-Penguin Press (2017).azw" "genomics_scripts/" "Table4defense.png" "9781408878705_epub.epub" "cala_faro.jpg" "Unknown - Unknown - No Title(3).pdf" "ninestates.png" "Books_SelfHelp/" "The_C_Prog_lang/" "(Advances in Mutagenesis Research 5) W.-U. Müller, C. Streffer (auth.), Professor Dr. Günter Obe (eds.)-Advances in Mutagenesis Research-Springer-Verlag Berlin Heidelberg (1994).pdf" "60-Second-Snapshot-Worksheet.pdf" "Lawreduced, Sense - Unknown - No Title.pdf" "Latchman - 2007 - Gene Regulation.pdf" "Smith, Morowitz - 2016 - The origin and nature of life on Earth the emergence of the fourth geosphere.pdf" "240114.kdb" "Timothy Ferriss The 4-Hour Chef The Simple Path to Cooking Like a Pro, Learning Anything, and Living the Good Life.epub" "088278.full.pdf" "Work2.org" "The-C-programming-language.epub" "How to Study Mathematics.pdf" ".dropbox.cache/" "J.H. Kaas-Evolution of Nervous Systems A Comprehensive Reference. Volumes 1-4-Academic Press (2006).pdf" "modenc_gene_timeseries.csv" "Books_fiction/" "Org/" "Jonathan Fields-How to Live a Good Life_ Soulful Stories, Surprising Science, and Practical Wisdom-Hay House, Inc. (2016).pdf" "Last phD Labmeeting.pdf" "Oliver Burkeman-The Antidote_ Happiness for People Who Can't Stand Positive Thinking-Faber & Faber (2012).epub" "Biology_of_genomes/" "Thesis/" "Chaos-Making-a-New-Science.epub" "library.bib" "mycorner/" "The-ANSI-C-Programming-Language.pdf" "Oldies/" "Reference Map of the Salivary Chromosomes of Drosophila melanogaster.jpg" "latexshort.pdf" "Thesis Defense 10012018.pdf" "emacs.d" "Sagan - Unknown - No Title.pdf" "Gordon Marino-Ethics_ The Essential Writings-Modern Library (2010).pdf" "Craig Wright Listening to Music.epub" ".dropbox" "plasmidDataBase/" "Org Backups/" "John Maynard Smith-Evolution and the Theory of Games (1982).pdf" "nrm0101_072a_f2.gif" "Old-School-Calisthenic-Beginner-Workouts.pdf" "Public/" "Unknown - Unknown - No Title(20).pdf" "Tim Ferriss-Tribe of Mentors_ Short Life Advice from the Best in the World-Houghton Mifflin Harcourt (2017).epub" "Journal_papers/" "Repatterning - Unknown - No Title.pdf" "Martínez, Gould - 1997 - La falsa medida del hombre.pdf" "Bioinfo_algos/" "Obsoleto/" "John Yates Culadasa, with J. Graves, M. Immergut The Mind Illuminated  A Complete Meditation Guide Integrating Buddhist Wisdom and Brain Science.epub" "Algorithms-to-Live-By-The-Computer-Science-of-Human-Decisions.epub" "Molecular Biology of the Cell-Alberts (2014).pdf" "Thesis Defense_footnotes.pdf" "aboutme/" "elfeeddb/" "Compartidas/" "Lab/" "Burocracia/" "(Stadler Genetics Symposia Series) Gary D. Burkholder (auth.), J. Perry Gustafson, R. Appels (eds.)-Chromosome Structure and Function_ Impact of New Concepts-Springer US (1988).pdf" "emery.04.pdf" "work/" "Books_non_fiction/" "Covert, Markus Fundamentals of Systems Biology From Synthetic Circuits to Whole-cell Models.pdf" "Marc Corrales BOG (Guillaume Filion).pdf" "../" "./")
+
+ ("/home/mcorrales/Dropbox/Org/" (23260 56373 643085 910000) "3.Personal.org" "2.Inbox_phone.org~" "Archives/" "5.Someday.org" "1.Inbox.org" "Calendars/" "4.Work.pdf" "errands.org" "Review.org" "./" "4.Work.tex" "4.Work.txt" "4.Work.org" "2.Inbox_phone.org" "../")
+
+ ("/home/mcorrales/Dropbox/The_C_Prog_lang/" (23252 57860 2268 924000) "characters_histogram.c" "count_catgories_array.c" "what_is_EOF.c" "faren_to_celsius.c" "backslashes_tabs_backspaces.txt" "count_lines.c" "count_chars_for.c" "character_array.c" "a.out" "my_wc.c" "count_chars.c" "show_control_characters.c" "hellow_world.c" "faren_to_celsius_funtion.c" "zerochars.txt" "only_one_blank.c" "./" "README.md" "exponentiation_function.c" "words_histogram.c" "copy_to_output.c" "characters_histogram.c~" ".git/" "print_charset.c" "faren_to_celsius_for.c" "backslashes_tabs_backspaces.txt~" "print_one_word_line.c" "character_array_copied.c" "count_bl_tabs_nl.c" "../")
+
+ ("/home/mcorrales/ant-login/HPIP/Doc/" (23256 40843 0 0) "Dockerdata_hpip/" "DNA_RNA_extraction.txt" "HPIP_Molecular_Biology.pdf" "Lib_prep_bacteria.txt" "Libraries_prep_and_seq.txt" "hpip_from_Dockerdata_dir.pdf" "../" "./")
+
+ ("/home/dockerdata/" (22884 43539 299237 509000) "models.rda" "downloads_for_Marc/" "Fig3b.pdf" "tmpX.rda" "domains.pdf" "92_4C_rep_15205_CGATGT.fastq.gz_final.tsv" "act_genes_r5.57.rda" "2RHet_norm.mat.gz" "predpow.rda" "poterm.rda" "2R.mat.gz" "term_prom_motifs_top100.txt" "GSE57876_pnr_S2.peaks.txt" "fourcline.py" "SuppFigX1a.pdf" "ColorDomains.RData" ".Rhistory" "dmel_mitochondrion_genome.mat.gz" "3RHet_norm.mat.gz" "plot_prdx_genes.R" "95_4C_12683_CTTGTA.fastq.gz_final.tsv" "91_4C_rep_15204_ATCACG.fastq.gz_final.tsv" "rep_timing_tracks.bed" "Uextra.mat.gz" "plot_real_vs_virtual4c.R" "shit_t_df.txt" "potall.rda" "out" "3LHet.mat.gz" "eEF1delta_S2_rep1.peaks.txt" "2LHet_norm.mat.gz" "dmel_r5.57_FB2014_03/" "95_4C_rep_15208_ACAGTG.fastq.gz_final.tsv" "Fig3e.pdf" "librariesBarcodes.RData" "2L.mat.gz" "U_norm.mat.gz" "modenc_gene_timeseries.csv" "93_4C_12681_TAGCTT.fastq.gz_final.tsv" "bun_locus.pdf" "93_4C_rep_15206_TTAGGC.fastq.gz_final.tsv" "potEF1.rda" "91_4C_12679_ACTTGA.fastq.gz_final.tsv" "shit_p_df.txt" "assign_color.R" "spie.R" "XHet.mat.gz" "2Real_vs_virtual4C.pdf" "2LHet.mat.gz" "Kc_hic_pairs_allrep.tsv" "SuppFigX1b.pdf" "3L_norm.mat.gz" "2L_norm.mat.gz" "3R_norm.mat.gz" "gdom1.rda" "prdx_ex_bun.pdf" "./" "3R.mat.gz" "GSE36175_norm_aggregated_tiling_arrays.txt.gz" "rep_timing_chr2L.png" "cumpred.pdf" "dmel-all-chromosome-r5.53.fasta" "U.mat.gz" "real_vs_virtual4C.pdf" "prdx_domains.txt" "violin_het.pdf" "SuppFigXb.pdf" "94_4C_12682_GGCTAC.fastq.gz_final.tsv" "GSM890120_H3K4me1_Kc.bed" "4_norm.mat.gz" "decay.pdf" "X_norm.mat.gz" "hic_rebuttal.png" "terms_seqs.fasta" "4.mat.gz" "tmp.pdf" ".bashrc" ".vim/" "94_4C_rep_15207_TGACCA.fastq.gz_final.tsv" "fourc_p8/" "3LHet_norm.mat.gz" "rscripts/" "Fig4a.pdf" "3RHet.mat.gz" "rep_timing_raw/" "motif_databases/" "glmnet_fit.rda" "gdom0.rda" "SRR442091.fastq" "ir_active_genes_vs_term.pdf" "violin-plot.R" "get_values_for_barplot.R" "3L.mat.gz" "Kc_exp_color.bed" "TFBS_venn.png" "SRR2774675.fastq" "violin_color_expression.pdf" "YHet.mat.gz" "2R_norm.mat.gz" "allprom.txt" "Rplots.pdf" "heatmap_glmnet.pdf" "2RHet.mat.gz" "Fig4b.pdf" "92_4C_12680_GATCAG.fastq.gz_final.tsv" "potGSE.rda" "Uextra_norm.mat.gz" "X.mat.gz" "prdx_ex_shep.pdf" "YHet_norm.mat.gz" "SuppFigX.pdf" "stripsize.pdf" "potprom.rda" "fourc_exp_line.py" "TADS/" "../" "SRR442090.fastq" "allpred.txt" "GSM890121_H3K27_Kc.bed" "SRR442091_H3K27Ac_discretized.tsv" "Visual_clustering.pdf" "PCA.pdf")
+
+ ("/home/Dockerdata_hpip/" (22498 46435 312486 7000) "./" "../")
+
+ ("/home/" (22498 46435 312486 7000) "mcorrales/" "vpokusaeva/" "dockerdata/" "rcortini/" "ezorita/" "./" "Dockerdata_hpip/" "hchen/" "ovujatovic/" "guillaume/" "users/" "tic/" "gfilion/" "../")
+
+ ("/Users/mcorrales/Dropbox/Psad/" (23243 42001 0 0) "fraction.pyc" "psad.org" "fraction.py" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/The_C_Prog_lang/" (23244 57092 0 0) "zerochars.txt" "what_is_EOF.c" "show_control_characters.c" "print_one_word_line.c" "print_charset.c" "only_one_blank.c" "my_wc.c" "hellow_world.c" "faren_to_celsius_for.c" "faren_to_celsius.c" "count_lines.c" "count_chars_for.c" "count_chars.c" "count_catgories_array.c" "count_bl_tabs_nl.c" "copy_to_output.c" "backslashes_tabs_backspaces.txt~" "backslashes_tabs_backspaces.txt" "a.out" "../" "./")
+
+ ("/Users/mcorrales/.config/" (21915 50988 0 0) "fontforge/" "../" "./")
+
+ ("/Users/" (22654 45474 0 0) "Shared/" "playground/" "mcorrales/" ".localized" "../" "./")
+
+ ("/Users/mcorrales/Dropbox/Bioinfo_algos/" (23229 2178 0 0) "rev_comp.py" "pattern_to_number.py" "pattern_matching.py" "pattern_count.py" "number_to_pattern.py" "frequent_words.py" "compute_freqs.py" "clump_find_fast.py" "clump_find.py" "Bioinfo_algos.org" ".git/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
